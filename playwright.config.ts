@@ -19,26 +19,26 @@ export default defineConfig({
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
-  retries: process.env.CI ? 2 : 0,
+  retries: process.env.CI ? 0 : 0,
   /* Opt out of parallel tests on CI. */
   // ...(process.env.CI ? { workers: 1 } : {}),
   workers: process.env.CI ? 1 : undefined as unknown as number,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ["html"],
-    ["allure-playwright"]
-    // ['playwright-html', { 
-    //   testFolder: 'tests',
-    //   title: 'Playwright HTML Report',
-    //   project: 'QA Tests',
-    //   release: '9.87.6',
-    //   testEnvironment: 'DEV',
-    //   embedAssets: true,
-    //   embedAttachments: true,
-    //   outputFolder: 'playwright-html-report',
-    //   minifyAssets: true,
-    //   startServer: true,
-    // }]
+    ["allure-playwright"],
+    ['playwright-html-reporter', { 
+      testFolder: 'tests',
+      title: 'Playwright HTML Report',
+      project: 'Open Cart',
+      release: '9.87.6',
+      testEnvironment: 'PROD',
+      embedAssets: true,
+      embedAttachments: true,
+      outputFolder: 'playwright-html-report',
+      minifyAssets: true,
+      startServer: false,
+    }]
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
@@ -47,7 +47,7 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
-    headless: false,
+    headless: true,
     screenshot: 'only-on-failure',
     video: 'on',
     baseURL: "https://naveenautomationlabs.com"

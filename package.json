@@ -21,6 +21,7 @@
     "allure-commandline": "^2.41.0",
     "allure-playwright": "^3.8.0",
     "csv-parse": "^6.2.1",
+    "playwright-html": "^1.2.5",
     "playwright-html-reporter": "^0.1.11"
   }
 }
