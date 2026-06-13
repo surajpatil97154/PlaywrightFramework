@@ -27,17 +27,17 @@ export default defineConfig({
   reporter: [
     ["html"],
     ["allure-playwright"],
-    ['playwright-html-reporter', { 
+    ['playwright-html', { 
       testFolder: 'tests',
       title: 'Playwright HTML Report',
-      project: 'Open Cart',
+      project: 'QA Tests',
       release: '9.87.6',
-      testEnvironment: 'PROD',
+      testEnvironment: 'DEV',
       embedAssets: true,
       embedAttachments: true,
       outputFolder: 'playwright-html-report',
       minifyAssets: true,
-      startServer: false,
+      startServer: true,
     }]
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
