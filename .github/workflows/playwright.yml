@@ -57,7 +57,7 @@ jobs:
           if-no-files-found: warn
 
       - name: Upload Playwright Report
-        if: always()l̥l̥
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: playwright-report
