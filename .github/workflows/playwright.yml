@@ -63,7 +63,7 @@ jobs:
           path: playwright-report/
           if-no-files-found: warn
 
-publish-reports:
+  publish-reports:
     needs: test
     runs-on: ubuntu-latest
     if: always()
