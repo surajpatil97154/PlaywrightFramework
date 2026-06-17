@@ -1,12 +1,12 @@
-# PWFWDemo Automation Reports
+# PWFWPlaywrightFramework Automation Reports
 
-Welcome to the **June2025PWFramework** automation project. Below you can find the latest test results and HTML reports.
+Welcome to the **PlaywrightFramework** automation project. Below you can find the latest test results and HTML reports.
 
 ---
 
 ## Workflow Status
 
-[![Playwright Tests](https://github.com/naveenanimation20/June2025PWFramework/actions/workflows/playwright.yml/badge.svg)](https://github.com/naveenanimation20/June2025PWFramework/actions/workflows/playwright.yml)
+[![Playwright Tests](https://surajpatil97154.github.io/PlaywrightFramework/actions/workflows/playwright.yml/badge.svg)](https://surajpatil97154.github.io/PlaywrightFramework/actions/workflows/playwright.yml)
 
 ---
 
@@ -25,6 +25,3 @@ Click the badges below to view the latest reports published via GitHub Pages:
 - Playwright HTML report is generated automatically from `npx playwright test`.  
 - Allure report is generated from the `allure-results` folder.  
 - Both reports are published to `gh-pages` branch and updated on each workflow run.
-
-
-https://surajpatil97154.github.io/PlaywrightFramework/
