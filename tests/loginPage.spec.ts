@@ -6,7 +6,7 @@ test("Login to application", async({homePage})=>{
 });
 
 
-test("Negative testcase for login ", async ({page,baseURL}) =>{
+test("Negative testcase for login", async ({page,baseURL}) =>{
   let loginPage = new LoginPage(page);
   await loginPage.goToLoginPage(baseURL);
   await loginPage.doLogin("mks@gmail.com","test@123");
