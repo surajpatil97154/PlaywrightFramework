@@ -1,0 +1,2 @@
+Clicked on element : locator('//a[contains(@href, "register")]').last()
+Clicked on element : getByRole('radio', { name: 'Yes' })

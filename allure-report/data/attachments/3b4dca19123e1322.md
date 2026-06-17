@@ -1,0 +1,272 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: productInfo.spec.ts >> verify product meta data
+- Location: tests\productInfo.spec.ts:40:5
+
+# Error details
+
+```
+Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: "Apple"
+Received: undefined
+```
+
+```
+Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: "Product 18"
+Received: undefined
+```
+
+```
+Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 800
+Received: undefined
+```
+
+```
+Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: "Out Of Stock"
+Received: undefined
+```
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - button "$ Currency " [ref=e7] [cursor=pointer]:
+        - strong [ref=e8]: $
+        - text: Currency
+        - generic [ref=e9]: 
+      - list [ref=e11]:
+        - listitem [ref=e12]:
+          - link "" [ref=e13] [cursor=pointer]:
+            - /url: https://naveenautomationlabs.com/opencart/index.php?route=information/contact
+            - generic [ref=e14]: 
+          - text: "123456789"
+        - listitem [ref=e15]:
+          - link " My Account" [ref=e16] [cursor=pointer]:
+            - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/account
+            - generic [ref=e17]: 
+            - text: My Account
+        - listitem [ref=e19]:
+          - link " Wish List (0)" [ref=e20] [cursor=pointer]:
+            - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/wishlist
+            - generic [ref=e21]: 
+            - text: Wish List (0)
+        - listitem [ref=e22]:
+          - link " Shopping Cart" [ref=e23] [cursor=pointer]:
+            - /url: https://naveenautomationlabs.com/opencart/index.php?route=checkout/cart
+            - generic [ref=e24]: 
+            - text: Shopping Cart
+        - listitem [ref=e25]:
+          - link " Checkout" [ref=e26] [cursor=pointer]:
+            - /url: https://naveenautomationlabs.com/opencart/index.php?route=checkout/checkout
+            - generic [ref=e27]: 
+            - text: Checkout
+  - banner [ref=e28]:
+    - generic [ref=e30]:
+      - link "naveenopencart" [ref=e33] [cursor=pointer]:
+        - /url: https://naveenautomationlabs.com/opencart/index.php?route=common/home
+        - img "naveenopencart" [ref=e34]
+      - generic [ref=e36]:
+        - textbox "Search" [ref=e37]: macbook
+        - button "" [ref=e39] [cursor=pointer]:
+          - generic [ref=e40]: 
+      - button " 0 item(s) - $0.00" [ref=e43] [cursor=pointer]:
+        - generic [ref=e44]: 
+        - text: 0 item(s) - $0.00
+  - navigation [ref=e46]:
+    - generic: 
+    - list [ref=e48]:
+      - listitem [ref=e49]:
+        - link "Desktops" [ref=e50] [cursor=pointer]:
+          - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/category&path=20
+      - listitem [ref=e51]:
+        - link "Laptops & Notebooks" [ref=e52] [cursor=pointer]:
+          - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/category&path=18
+      - listitem [ref=e53]:
+        - link "Components" [ref=e54] [cursor=pointer]:
+          - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/category&path=25
+      - listitem [ref=e55]:
+        - link "Tablets" [ref=e56] [cursor=pointer]:
+          - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/category&path=57
+      - listitem [ref=e57]:
+        - link "Software" [ref=e58] [cursor=pointer]:
+          - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/category&path=17
+      - listitem [ref=e59]:
+        - link "Phones & PDAs" [ref=e60] [cursor=pointer]:
+          - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/category&path=24
+      - listitem [ref=e61]:
+        - link "Cameras" [ref=e62] [cursor=pointer]:
+          - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/category&path=33
+      - listitem [ref=e63]:
+        - link "MP3 Players" [ref=e64] [cursor=pointer]:
+          - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/category&path=34
+  - generic [ref=e65]:
+    - list [ref=e66]:
+      - listitem [ref=e67]:
+        - link "" [ref=e68] [cursor=pointer]:
+          - /url: https://naveenautomationlabs.com/opencart/index.php?route=common/home
+          - generic [ref=e69]: 
+      - listitem [ref=e70]:
+        - link "Search" [ref=e71] [cursor=pointer]:
+          - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/search&search=macbook
+      - listitem [ref=e72]:
+        - link "MacBook Pro" [ref=e73] [cursor=pointer]:
+          - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/product&search=macbook&product_id=45
+    - generic [ref=e76]:
+      - generic [ref=e77]:
+        - list [ref=e78]:
+          - listitem [ref=e79]:
+            - link "MacBook Pro" [ref=e80] [cursor=pointer]:
+              - /url: https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/macbook_pro_1-500x500.jpg
+              - img "MacBook Pro" [ref=e81]
+          - listitem [ref=e82]:
+            - link "MacBook Pro" [ref=e83] [cursor=pointer]:
+              - /url: https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/macbook_pro_4-500x500.jpg
+              - img "MacBook Pro" [ref=e84]
+          - listitem [ref=e85]:
+            - link "MacBook Pro" [ref=e86] [cursor=pointer]:
+              - /url: https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/macbook_pro_3-500x500.jpg
+              - img "MacBook Pro" [ref=e87]
+          - listitem [ref=e88]:
+            - link "MacBook Pro" [ref=e89] [cursor=pointer]:
+              - /url: https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/macbook_pro_2-500x500.jpg
+              - img "MacBook Pro" [ref=e90]
+        - list [ref=e91]:
+          - listitem [ref=e92]:
+            - link "Description" [ref=e93]:
+              - /url: "#tab-description"
+          - listitem [ref=e94]:
+            - link "Reviews (0)" [ref=e95] [cursor=pointer]:
+              - /url: "#tab-review"
+        - generic [ref=e96]:
+          - generic [ref=e99]:
+            - paragraph [ref=e100]: Latest Intel mobile architecture
+            - paragraph [ref=e101]: Powered by the most advanced mobile processors from Intel, the new Core 2 Duo MacBook Pro is over 50% faster than the original Core Duo MacBook Pro and now supports up to 4GB of RAM.
+            - paragraph [ref=e102]: Leading-edge graphics
+            - paragraph [ref=e103]: The NVIDIA GeForce 8600M GT delivers exceptional graphics processing power. For the ultimate creative canvas, you can even configure the 17-inch model with a 1920-by-1200 resolution display.
+            - paragraph [ref=e104]: Designed for life on the road
+            - paragraph [ref=e105]: Innovations such as a magnetic power connection and an illuminated keyboard with ambient light sensor put the MacBook Pro in a class by itself.
+            - paragraph [ref=e106]: Connect. Create. Communicate.
+            - paragraph [ref=e107]: Quickly set up a video conference with the built-in iSight camera. Control presentations and media from up to 30 feet away with the included Apple Remote. Connect to high-bandwidth peripherals with FireWire 800 and DVI.
+            - paragraph [ref=e108]: Next-generation wireless
+            - paragraph [ref=e109]: Featuring 802.11n wireless technology, the MacBook Pro delivers up to five times the performance and up to twice the range of previous-generation technologies.
+          - text: "* * *"
+      - generic [ref=e110]:
+        - generic [ref=e111]:
+          - button "" [ref=e112] [cursor=pointer]:
+            - generic [ref=e113]: 
+          - button "" [ref=e114] [cursor=pointer]:
+            - generic [ref=e115]: 
+        - heading "MacBook Pro" [level=1] [ref=e116]
+        - list [ref=e117]:
+          - listitem [ref=e118]:
+            - text: "Brand:"
+            - link "Apple" [ref=e119] [cursor=pointer]:
+              - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/manufacturer/info&manufacturer_id=8
+          - listitem [ref=e120]: "Product Code: Product 18"
+          - listitem [ref=e121]: "Reward Points: 800"
+          - listitem [ref=e122]: "Availability: Out Of Stock"
+        - list [ref=e123]:
+          - listitem [ref=e124]:
+            - heading "$2,000.00" [level=2] [ref=e125]
+          - listitem [ref=e126]: "Ex Tax: $2,000.00"
+        - generic [ref=e128]:
+          - generic [ref=e129]: Qty
+          - textbox "Qty" [ref=e130]: "1"
+          - button "Add to Cart" [ref=e131] [cursor=pointer]
+        - paragraph [ref=e133]:
+          - generic [ref=e135]: 
+          - generic [ref=e137]: 
+          - generic [ref=e139]: 
+          - generic [ref=e141]: 
+          - generic [ref=e143]: 
+          - link "0 reviews" [ref=e144] [cursor=pointer]:
+            - /url: ""
+          - text: /
+          - link "Write a review" [ref=e145] [cursor=pointer]:
+            - /url: ""
+  - contentinfo [ref=e146]:
+    - generic [ref=e147]:
+      - generic [ref=e148]:
+        - generic [ref=e149]:
+          - heading "Information" [level=5] [ref=e150]
+          - list [ref=e151]:
+            - listitem [ref=e152]:
+              - link "About Us" [ref=e153] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=information/information&information_id=4
+            - listitem [ref=e154]:
+              - link "Delivery Information" [ref=e155] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=information/information&information_id=6
+            - listitem [ref=e156]:
+              - link "Privacy Policy" [ref=e157] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=information/information&information_id=3
+            - listitem [ref=e158]:
+              - link "Terms & Conditions" [ref=e159] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=information/information&information_id=5
+        - generic [ref=e160]:
+          - heading "Customer Service" [level=5] [ref=e161]
+          - list [ref=e162]:
+            - listitem [ref=e163]:
+              - link "Contact Us" [ref=e164] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=information/contact
+            - listitem [ref=e165]:
+              - link "Returns" [ref=e166] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/return/add
+            - listitem [ref=e167]:
+              - link "Site Map" [ref=e168] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=information/sitemap
+        - generic [ref=e169]:
+          - heading "Extras" [level=5] [ref=e170]
+          - list [ref=e171]:
+            - listitem [ref=e172]:
+              - link "Brands" [ref=e173] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/manufacturer
+            - listitem [ref=e174]:
+              - link "Gift Certificates" [ref=e175] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/voucher
+            - listitem [ref=e176]:
+              - link "Affiliate" [ref=e177] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=affiliate/login
+            - listitem [ref=e178]:
+              - link "Specials" [ref=e179] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=product/special
+        - generic [ref=e180]:
+          - heading "My Account" [level=5] [ref=e181]
+          - list [ref=e182]:
+            - listitem [ref=e183]:
+              - link "My Account" [ref=e184] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/account
+            - listitem [ref=e185]:
+              - link "Order History" [ref=e186] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/order
+            - listitem [ref=e187]:
+              - link "Wish List" [ref=e188] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/wishlist
+            - listitem [ref=e189]:
+              - link "Newsletter" [ref=e190] [cursor=pointer]:
+                - /url: https://naveenautomationlabs.com/opencart/index.php?route=account/newsletter
+      - separator [ref=e191]
+      - paragraph [ref=e192]:
+        - text: Powered By
+        - link "OpenCart" [ref=e193] [cursor=pointer]:
+          - /url: http://www.opencart.com
+        - text: naveenopencart © 2026
+```

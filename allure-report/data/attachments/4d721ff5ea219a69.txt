@@ -1,0 +1,7 @@
+username===>test999@gmail.com
+username===>test@123
+Clicked on element : input[value='Login']
+search text :canon
+Clicked on element : locator('div[id=\'search\'] button[type=button]')
+Clicked on element : getByRole('link', { name: 'Canon EOS 5D' })
+product header : Canon EOS 5D
